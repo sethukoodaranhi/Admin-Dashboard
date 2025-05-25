@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import userPic from '../../assets/images/user.png'
 import { Icon } from '@iconify/react'
 import Modal from '../../components/Common/Modal'
-import EditUser from '../../components/Settings/editUser'
+import EditUser from '../../components/Settings/EditUser'
 function Settings() {
   const username = localStorage.getItem('name')
   const email = localStorage.getItem('email')
