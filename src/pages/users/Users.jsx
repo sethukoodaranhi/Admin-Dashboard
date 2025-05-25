@@ -13,13 +13,15 @@ function Users() {
   })
 
   useEffect(() => {
-    console.log("====users====",data)
+    console.log("====users====", data)
     dispatch(SetUserLists(data?.data));
   }, [data])
 
   return (
     <>
-      <UsersList isLoading={isLoading} />
+      <UsersList
+        isLoading={isLoading}
+        data={data?.data} />
     </>
   )
 }
